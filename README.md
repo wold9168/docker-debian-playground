@@ -1,22 +1,16 @@
-# docker-debian-playground
+# docker-debian-playground for hitlug
 
-gdraheim/docker-systemctl-replacement + Debian 13(trixie)
+本分支用于HITLUG技术宣讲第一期的教学环境。
 
-## Usage
+gdraheim/docker-systemctl-replacement + Debian 12(bookworm)
 
-```shell
-# Run it
-make build # Build the image
-make run # Run the container with the name "playground", using the image.
-make shell
-# Or if you prefer to use another shell
-# docker exec -it playground <your shell installed in the container>
+## 使用方式
 
-# Remove (And all the data in the container will be lost.)
-make stop # Stop the container
-make remove # Delete the container
-make remove-image # Delete the image
-```
+我提供了三个简单的脚本，可以双击运行对应的操作：
+
+- `install.ps1`：编译并启动容器，可以理解为“安装程序”
+- `shell.ps1`：进入容器的命令行环境，可以理解为“启动环境”
+- `uninstall.ps1`：停止并删除容器，删除镜像，可以理解为“卸载环境”
 
 ## LICENSE
 
